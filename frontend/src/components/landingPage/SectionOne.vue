@@ -1,5 +1,15 @@
 <script setup>
 import { ref } from 'vue'
+import kendungImage from '../../img/kendung.jpg'
+
+const bgStyle = {
+  backgroundImage: `url(${kendungImage})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundColor: 'rgba(0, 0, 0, 0.3)',
+backgroundBlendMode: 'multiply'
+}
 
 const color = ref({
   primary: {
@@ -24,29 +34,26 @@ const styleBtn1 = ref(
 const styleBtn2 = ref(
   'cursor-pointer bg-white/50 border border-white h-13 hover:bg-white/70 font-semibold py-2 px-4 rounded-xl mt-7 shadow-lg',
 )
-const styleSection = ref('absolute mt-15 h-137 w-full')
+const styleSection = ref('h-137 w-full')
 </script>
 
 <template>
   <section
     :class="styleSection"
-    :style="{
-      background:
-        'linear-gradient(to top right, ' + color.primary[200] + ', ' + color.primary[50] + ')',
-    }"
+    :style="bgStyle"
     style="font-family: playfair-display"
   >
-    <div class="container mx-auto px-4 py-3 flex justify-between">
-      <div class="mt-25">
-        <h1 class="text-6xl font-bold">
+    <div class="container py-3 flex justify-center mx-auto">
+      <div class="mt-25 text-center">
+        <h1 class="text-6xl font-bold text-white">
           Selamat Datang di <br class="m-1" />
-          Kampung Kendung
+          <span :style="{ color: color.primary[600] }">Kampung Kendung</span>
         </h1>
-        <p class="text-xl mt-10 text-gray-600">
+        <p class="text-xl mt-10 text-gray-100">
           Kampung Kendung adalah tempat yang ideal untuk <br />menikmati suasana alam yang indah dan
           sehat.
         </p>
-        <div class="flex gap-5">
+        <div class="flex gap-5 justify-center">
           <button
             :class="styleBtn1"
             :style="{
@@ -61,47 +68,6 @@ const styleSection = ref('absolute mt-15 h-137 w-full')
           <button :class="styleBtn2" :style="{ color: color.primary[600] }">
             Jelajahi Kampung
           </button>
-        </div>
-      </div>
-
-      <!-- Image -->
-      <div class="lg:w-1/2 relative animate-fade-in animation-delay-500 mt-6">
-        <div class="bg-white/50 rounded-2xl p-4 shadow-2xl transform rotate-2">
-          <div class="bg-white rounded-xl">
-            <img
-              src="../../img/kendung.jpg"
-              alt="Kampung Kendung"
-              class="w-full h-96 object-cover rounded-2xl"
-            />
-          </div>
-        </div>
-
-        <!-- Icon -->
-        <div
-          class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg w-48 transform -rotate-3"
-        >
-          <div class="flex items-center">
-            <div class="p-2 rounded-lg mr-3" :style="{ backgroundColor: color.primary[100] }">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5" :style="{ color: color.primary[600] }"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-            <div>
-              <p class="font-medium text-sm text-gray-700">100+ Keluarga</p>
-              <p class="text-xs" :style="{ color: color.primary[600] }">Sejahtera & Harmonis</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
