@@ -20,10 +20,11 @@ const hoveredItem = ref('')
 </script>
 
 <template>
-  <nav class="absolute w-full z-10 shadow-xs h-15 text-white">
+  <nav class="absolute w-full z-10 h-15 text-white">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex mt-1">
-        <span class="text-2xl font-bold text-white ml-12">Kampung Kendung</span>
+        <img src="../../img/tasik.png" alt="Tasik" class="h-10 w-10">
+        <span class="text-2xl font-bold text-white ml-2">Kampung Kendung</span>
       </div>
       <div class="hidden md:block">
         <ul class="flex space-x-10">
@@ -70,7 +71,7 @@ const hoveredItem = ref('')
           <li>
             <a
               href="#"
-              class="nav-link font-medium text-gray-700 transition-colors duration-300"
+              class="nav-link font-medium text-white transition-colors duration-300"
               :style="{ color: hoveredItem === 'kontak' ? color.primary[600] : '' }"
               @mouseenter="hoveredItem = 'kontak'"
               @mouseleave="hoveredItem = ''"
