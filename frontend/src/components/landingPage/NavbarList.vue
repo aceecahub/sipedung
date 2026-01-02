@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import landing from '@/views/LandingPage.vue'
 
 const color = ref({
   primary: {
@@ -46,7 +47,7 @@ onUnmounted(() => {
         <ul class="flex space-x-10">
           <li>
             <a
-              href="#"
+              href="#beranda"
               class="nav-link font-medium transition-colors duration-300"
               :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
               :style="{ color: hoveredItem === 'beranda' ? color.primary[600] : '' }"
@@ -57,7 +58,7 @@ onUnmounted(() => {
           </li>
           <li>
             <a
-              href="#"
+              href="tentang"
               class="nav-link font-medium transition-colors duration-300"
               :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
               :style="{ color: hoveredItem === 'tentang' ? color.primary[600] : '' }"

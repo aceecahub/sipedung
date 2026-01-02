@@ -7,7 +7,7 @@ const bgStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  backgroundColor: 'rgba(10, 30, 80, 0.3)',
+  backgroundColor: 'rgba(10, 30, 80, 0.4)',
   backgroundBlendMode: 'multiply',
   borderRadius: '0px 0px 10px 10px',
 }
