@@ -7,7 +7,7 @@ const bgStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  backgroundColor: 'rgba(10, 30, 80, 0.3)',
   backgroundBlendMode: 'multiply',
   borderRadius: '0px 0px 10px 10px',
 }
@@ -27,9 +27,9 @@ const styleSection = ref('h-137 w-full')
       <div class="mt-25 text-center">
         <h1 class="text-6xl font-bold text-white">
           Selamat Datang di <br class="m-1" />
-          <span class="text-blue-400">Kampung Kendung</span>
+          <span class="text-blue-500">Kampung Kendung</span>
         </h1>
-        <p class="text-xl mt-10 text-gray-100">
+        <p class="text-xl mt-10 text-gray-50">
           Kampung Kendung adalah tempat yang ideal untuk <br />menikmati suasana alam yang indah dan
           sehat.
         </p>
