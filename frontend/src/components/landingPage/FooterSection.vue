@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from 'vue'
-const styleFooter = ref('bg-blue-500 text-white p-4')
+    import '@/components/landingPage/NavbarList.vue'
 </script>
 
 <template>
@@ -51,11 +50,11 @@ const styleFooter = ref('bg-blue-500 text-white p-4')
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
                     <ul class="space-y-3">
-                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Beranda</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
-                        <li><a href="#features" class="text-gray-400 hover:text-white transition">Keunggulan</a></li>
-                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Galeri</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                        <li><a href="#beranda" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#tentang-kami" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#keunggulan" class="text-gray-400 hover:text-white transition">Keunggulan</a></li>
+                        <li><a href="#galeri" class="text-gray-400 hover:text-white transition">Galeri</a></li>
+                        <li><a href="#kontak" class="text-gray-400 hover:text-white transition">Kontak</a></li>
                     </ul>
                 </div>
 

@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import './NavbarList.vue'
 import kendungImage from '../../img/kendung2.jpg'
 
 const bgStyle = {
@@ -34,7 +35,9 @@ const styleSection = ref('h-137 w-full')
           sehat.
         </p>
         <div class="flex gap-5 justify-center">
-          <button :class="styleBtn1">Hubungi Kami</button>
+          <a href="#kontak">
+            <button :class="styleBtn1">Hubungi Kami</button>
+          </a>
           <button :class="styleBtn2">Jelajahi Kampung</button>
         </div>
       </div>

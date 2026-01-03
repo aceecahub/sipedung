@@ -8,7 +8,7 @@ CORS(app)
 def hello():
     return jsonify({"message": "Hello from Flask API"})
 
-@app.route("/dashboard")
+@app.route("/login")
 def dashboard():
     return jsonify({"message": "Hallo mister echa"})
 

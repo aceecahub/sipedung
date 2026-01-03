@@ -2,6 +2,7 @@
 import NavbarList from "../components/landingPage/NavbarList.vue"
 import WelcomeSection from "../components/landingPage/WelcomeSection.vue"
 import AboutSection from "../components/landingPage/AboutSection.vue"
+import LembagaSection from "../components/landingPage/LembagaSection.vue"
 import GalerySection from "../components/landingPage/GalerySection.vue"
 import ContactSection from "../components/landingPage/ContactSection.vue"
 import FooterSection from "../components/landingPage/FooterSection.vue"
@@ -11,6 +12,7 @@ import FooterSection from "../components/landingPage/FooterSection.vue"
     <NavbarList />
     <WelcomeSection id="beranda" />
     <AboutSection id="tentang" />
+    <LembagaSection id="lembaga" />
     <GalerySection id="galeri" />
     <ContactSection id="kontak" />
     <FooterSection />
