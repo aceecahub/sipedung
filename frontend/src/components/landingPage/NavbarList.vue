@@ -2,22 +2,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
 
-const color = ref({
-  primary: {
-    50: '#f0f9ff',
-    100: '#e0f2fe',
-    200: '#bae6fd',
-    300: '#7dd3fc',
-    400: '#38bdf8',
-    500: '#0ea5e9',
-    600: '#0284c7',
-    700: '#0369a1',
-    800: '#075985',
-    900: '#0c4a6e',
-  },
-})
-
-const hoveredItem = ref('')
 const isScrolled = ref(false)
 
 const handleScroll = () => {
@@ -61,6 +45,7 @@ onUnmounted(() => {
 })
 
 const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md bg-blue-500 text-white hover:bg-blue-600')
+const styleNav = ref('cursor-pointer hover:text-blue-500 font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10')
 </script>
 
 <template>
@@ -79,11 +64,8 @@ const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors du
             <a
               href="#beranda"
               @click="(e) => scrollToSection(e, 'beranda')"
-              class="nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10 "
-              :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
-              :style="{ color: hoveredItem === 'beranda' ? color.primary[600] : '' }"
-              @mouseenter="hoveredItem = 'beranda'"
-              @mouseleave="hoveredItem = ''"
+              :class="styleNav"
+              
               >Beranda</a
             >
           </li>
@@ -91,11 +73,7 @@ const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors du
             <a
               href="#tentang"
               @click="(e) => scrollToSection(e, 'tentang')"
-              class="nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10 "
-              :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
-              :style="{ color: hoveredItem === 'tentang' ? color.primary[600] : '' }"
-              @mouseenter="hoveredItem = 'tentang'"
-              @mouseleave="hoveredItem = ''"
+              :class="styleNav"
               >Tentang</a
             >
           </li>
@@ -103,11 +81,7 @@ const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors du
             <a
               href="#lembaga"
               @click="(e) => scrollToSection(e, 'lembaga')"
-              class="nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10 "
-              :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
-              :style="{ color: hoveredItem === 'lembaga' ? color.primary[600] : '' }"
-              @mouseenter="hoveredItem = 'lembaga'"
-              @mouseleave="hoveredItem = ''"
+              :class="styleNav"
               >Lembaga</a
             >
           </li>
@@ -115,11 +89,7 @@ const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors du
             <a
               href="#galeri"
               @click="(e) => scrollToSection(e, 'galeri')"
-              class="nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10"
-              :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
-              :style="{ color: hoveredItem === 'galeri' ? color.primary[600] : '' }"
-              @mouseenter="hoveredItem = 'galeri'"
-              @mouseleave="hoveredItem = ''"
+              :class="styleNav"
               >Galeri</a
             >
           </li>
@@ -127,11 +97,7 @@ const styleLogin = ref('cursor-pointer nav-link font-medium transition-colors du
             <a
               href="#kontak"
               @click="(e) => scrollToSection(e, 'kontak')"
-              class="nav-link font-medium transition-colors duration-300 px-2 py-1 rounded-md hover:bg-opacity-10"
-              :class="{ 'text-gray-800': isScrolled, 'text-white': !isScrolled }"
-              :style="{ color: hoveredItem === 'kontak' ? color.primary[600] : '' }"
-              @mouseenter="hoveredItem = 'kontak'"
-              @mouseleave="hoveredItem = ''"
+              :class="styleNav"
               >Kontak</a
             >
           </li>

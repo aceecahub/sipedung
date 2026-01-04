@@ -8,7 +8,7 @@
   <section id="lembaga" class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-1">Lembaga Kami</h2>
-      <hr class="w-20 h-1 border-0 rounded-full bg-blue-400 ml-128 mb-9" />
+      <hr class="w-20 h-1 border-0 rounded-full bg-blue-400 ml-160 mb-9" />
 
       <!-- Card -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
