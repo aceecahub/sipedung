@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const styleImage = ref(
-  'h-64 rounded-xl hover:scale-102 transition-transform duration-300 shadow-lg',
+  'h-64 rounded-xl hover:scale-102 transition-transform duration-300 shadow-lg bg-cover',
 )
 const styleBtn = ref(
   'cursor-pointer bg-blue-500 text-white px-4 rounded-xl py-4 text-xl font-bold shadow-xl hover:bg-blue-600 transition-colors duration-300',
@@ -22,29 +22,29 @@ const styleBtn = ref(
 
       <!-- Image Galery -->
       <div class="grid grid-cols-4 gap-8 mt-15">
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/pemuda.png" alt="pemuda" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/ibuibu.png" alt="ibuibu" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/bapabapa.png" alt="bapabapa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"/>
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/ibuibu2.png" alt="ibuibu2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/lomba.png" alt="lomba" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/juara.png" alt="juara" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/anaksd.png" alt="anak" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
-        <div :class="styleImage">
-          <img src="../../img/kendung.jpg" alt="Kendung" :class="styleImage" />
+        <div class="h-64 rounded-xl overflow-hidden shadow-lg">
+          <img src="../../img/galery/anaksd.png" alt="anak" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
       </div>
 

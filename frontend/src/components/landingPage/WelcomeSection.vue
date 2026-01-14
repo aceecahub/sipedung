@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 import './NavbarList.vue'
-import kendungImage from '../../img/kendung2.jpg'
+import gapuraImage from '../../img/gapura.png'
 
 const bgStyle = {
-  backgroundImage: `url(${kendungImage})`,
+  backgroundImage: `url(${gapuraImage})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
@@ -30,7 +30,7 @@ const styleSection = ref('h-137 w-full')
           Selamat Datang di <br class="m-1" />
           <span class="text-blue-500">Kampung Kendung</span>
         </h1>
-        <p class="text-xl mt-10 text-gray-50">
+        <p class="text-xl mt-10 text-gray-50" >
           Kampung Kendung adalah tempat yang ideal untuk <br />menikmati suasana alam yang indah dan
           sehat.
         </p>

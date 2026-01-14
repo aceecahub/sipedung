@@ -51,8 +51,8 @@
                     <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
                     <ul class="space-y-3">
                         <li><a href="#beranda" class="text-gray-400 hover:text-white transition">Beranda</a></li>
-                        <li><a href="#tentang-kami" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
-                        <li><a href="#keunggulan" class="text-gray-400 hover:text-white transition">Keunggulan</a></li>
+                        <li><a href="#tentang" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#lembaga" class="text-gray-400 hover:text-white transition">Lembaga</a></li>
                         <li><a href="#galeri" class="text-gray-400 hover:text-white transition">Galeri</a></li>
                         <li><a href="#kontak" class="text-gray-400 hover:text-white transition">Kontak</a></li>
                     </ul>
